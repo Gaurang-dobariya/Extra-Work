@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+
+        let user = "Gaurang"
+        let u_pass = "dobariya145"
+        let u_role = "user"
+
+        let admin = "DObariya"
+        let a_pass = "12345"
+        let a_role = "admin"
+
+        let name = prompt("Enter Your Name")
+        let password = prompt("Enter Passsword")
+        let role = prompt("Enter Role")
+
+        if (name == user && password == u_pass && role == u_role) {
+
+            console.log("login Successful");
+
+            console.log("Hello User!");
+
+        }
+        else if (name == admin && password == a_pass && role == a_role) {
+
+            console.log("Admin login Successful");
+
+            let product = prompt("Enter Product")
+            console.log(product);
+            let product1 = prompt("Enter Product")
+            console.log(product1);
+
+        }
+        else {
+
+            console.log("Invalid Details");
+
+        }
+
+
+    </script>
+</body>
+
+</html>

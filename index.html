@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+
+
+
+
+    <script>
+
+        let user = "Gaurang"
+        let pass = "Dobariya145"
+
+        const username = prompt("Enter User Name")
+
+        if (user == username) {
+
+            console.log("User Is Right");
+
+            const password = prompt("Enter Password")
+
+            if (pass == password) {
+
+                console.log("Login Successful");
+
+                let science = parseInt(prompt("Enter Your Science Mark"))
+                let maths = parseInt(prompt("Enter Your Maths Mark"))
+                let english = parseInt(prompt("Enter Your English Mark"))
+                let hindi = parseInt(prompt("Enter Your Hindi Mark"))
+
+                let percentage = (science + maths + english + hindi) / 4
+
+                console.log("Result = ", percentage);
+
+                if (percentage > 80) {
+                    console.log("Grade A");
+                }
+                else if (percentage > 60 && percentage <= 80) {
+                    console.log("Grade B");
+                }
+                else if (percentage > 40 && percentage <= 60) {
+                    console.log("Grade C");
+                }
+                else {
+                    console.log("Fail");
+                }
+
+            }
+            else {
+
+                console.log("Invalid Password");
+
+            }
+        }
+        else {
+
+            console.log("invalid User Name");
+
+        }
+
+    </script>
+</body>
+
+</html>
